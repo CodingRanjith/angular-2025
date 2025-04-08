@@ -1,0 +1,36 @@
+
+<div class="body">
+    <div class="login">
+        <div>
+            <h1>REGISTRATION PAGE</h1>
+        </div>
+        <div>
+            <label for="" >Name :</label><input type="text" [(ngModel)]="name" [maxlength]="10">
+        </div>
+        <div>
+            <label for="" >Email :</label><input type="email" [(ngModel)]="email">
+        </div>
+        <div>
+            <label for="" >Phone Number :</label><input type="number" [(ngModel)]="phoneNumber">
+        </div>
+        <div>
+            <label for="" >DOB:</label><input type="date" [(ngModel)]="date">
+        </div>
+        <div>
+            <button (click)="submit()">submit</button>
+        </div>
+        Name Is {{name | uppercase}} 
+        
+        <div> 
+            <input type="button" value="{{caption}}" (click)="changeData()"/> 
+            <br /> 
+            <h2 *ngIf="showInfo"><span>Demonstrate of Structural Directives - *ngIf</span></h2> 
+           </div>
+    </div>
+    
+</div>
+ 
+    <p> Formatted date : {{toDate | date:'medium'}} </p>`<br><br>
+    <p>Unformatted :{{cur}} </p>
+    <p>Example 1 :{{cur | currency }} </p>
+    <p>Example 2 :{{cur | currency:'INR':true:'4.2-2'}} </p>

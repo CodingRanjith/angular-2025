@@ -1,0 +1,13 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
